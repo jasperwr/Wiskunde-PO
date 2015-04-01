@@ -10,6 +10,8 @@ loop do
     puts "We're starting now!"
     
     sleep 2
+    
+    puts
 
     startlogic = Time.now
 
@@ -27,7 +29,11 @@ loop do
 
     difflogic = finishlogic - startlogic
 
+    puts
+    
     puts difflogic
+    
+    puts
     
     sleep 5
     
@@ -46,7 +52,11 @@ loop do
 
     diffrandom = finishrandom - startrandom
 
+    puts
+    
     puts diffrandom
+    
+    puts
         
     puts "Want to see the times again?"
     
@@ -57,8 +67,6 @@ loop do
     puts "Do you want to run the script again? Y/N"
     
     question = gets.chomp
-    
-    puts question
     
     if question == "Y"
         sleep 5
